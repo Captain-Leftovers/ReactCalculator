@@ -1,0 +1,30 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(237,245,255,1) 57%, rgba(46,52,61,1) 100%);
+}
+
+.calculator-grid {
+    height: 100vh;
+    justify-content:center;
+    align-content:center;
+    display:grid;
+    grid: minmax(7rem, auto) repeat(5, 6rem) / repeat(4, 6rem);
+    
+
+} 
+.calculator-grid > button {
+    cursor:pointer;
+    background-color: rgba(200, 181, 8, 0.66);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.output-display {
+    grid-area: 1/1/2/5;
+    background-color:rgba(0,0,0,0.55);
+}
+
+.span-two {
+    grid-column: span 2;
+}

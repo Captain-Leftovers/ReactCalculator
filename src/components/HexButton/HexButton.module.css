@@ -1,0 +1,32 @@
+.hexContainer {
+    position: relative;
+    background-color: red;
+}
+
+.hexBlock, .hexBlock::after, .hexBlock::before {
+    position: absolute;
+    cursor:pointer;
+    background-color: rgb(177, 160, 13);
+    width:3.5rem;
+    height: 6rem;
+    
+}
+
+.hexBlock::after {
+    position: absolute;
+    content: "";
+    rotate:60deg;
+}
+
+.hexBlock::before {
+    position: absolute;
+    content: "";
+    rotate:-60deg;
+}
+
+p {
+    z-index: 1;
+    position:absolute;
+    left:25%;
+    top:25%;
+}

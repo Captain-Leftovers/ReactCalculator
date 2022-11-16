@@ -1,4 +1,5 @@
 import "./styles.css";
+import HexButton from "./components/HexButton/HexButton.js";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
         <div className="current-operand"></div>
       </div>
       <button className="span-two">AC</button>
-      <button>DEL</button>
+      <HexButton digit="DEL"/>
       <button>÷</button>
       <button>1</button>
       <button>2</button>

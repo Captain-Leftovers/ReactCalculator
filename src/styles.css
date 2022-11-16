@@ -3,7 +3,9 @@
 }
 body {
     margin: 0;
-background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(237,245,255,1) 57%, rgba(46,52,61,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(237,245,255,1) 57%, rgba(46,52,61,1) 100%); 
+    display:flex;
+    justify-content: center;
 }
 
 .calculator-grid {

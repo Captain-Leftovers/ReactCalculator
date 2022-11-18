@@ -1,7 +1,17 @@
+import { useReducer } from "react";
 import "./styles.css";
-import HexButton from "./components/HexButton/HexButton.js";
+
+function reducer (state, ){
+  
+   
+
+}
+
 
 function App() {
+  const [state, dispatch] = useReducer(reducer);
+
+
   return (
     <div className="calculator-grid">
       <div className="output-display">
@@ -9,7 +19,7 @@ function App() {
         <div className="current-operand"></div>
       </div>
       <button className="span-two">AC</button>
-      <HexButton digit="DEL"/>
+      <button>DEL</button>
       <button>÷</button>
       <button>1</button>
       <button>2</button>
